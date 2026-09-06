@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eduardo Jesus Dal Pizzol — Engenharia de Software</title>
+<meta name="description" content="Estudante de Engenharia de Software na UnB. Automação em Python, back-end e algoritmos.">
+
+<!--
+  ============================================================
+  TROQUE ANTES DE PUBLICAR — procure por "TROCAR" no arquivo:
+
+  1. Links dos repositórios (5 lugares, marcados com TROCAR-REPO)
+  2. Link do deploy do Juiz Online (marcado com TROCAR-DEMO)
+  3. Se quiser foto, veja o bloco comentado "FOTO" logo abaixo do nome
+  4. Coloque o PDF do currículo na mesma pasta com o nome
+     curriculo.pdf, ou ajuste o link marcado com TROCAR-CV
+
+  Para publicar: crie um repositório chamado Edupizzol.github.io,
+  suba este arquivo como index.html e ative o GitHub Pages em
+  Settings > Pages. Fica no ar em https://edupizzol.github.io
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#14181f;
+    --ink-2:#1a202a;
+    --line:#28303c;
+    --bone:#e8e6e1;
+    --muted:#8a93a2;
+    --amber:#e0a458;
+    --amber-dim:#b8823f;
+
+    --display:"Space Grotesk", system-ui, sans-serif;
+    --body:"Newsreader", Georgia, serif;
+
+    --pad:clamp(1.5rem, 5vw, 5rem);
+  }
+
+  *{box-sizing:border-box;}
+
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--bone);
+    font-family:var(--body);
+    font-size:clamp(1.02rem, 0.98rem + 0.2vw, 1.14rem);
+    line-height:1.62;
+    font-weight:300;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{
+    max-width:1060px;
+    margin:0 auto;
+    padding:0 var(--pad);
+  }
+
+  a{color:var(--bone); text-decoration:none;}
+  a:focus-visible{
+    outline:2px solid var(--amber);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+
+  /* ---------- hero ---------- */
+
+  header{
+    padding:clamp(4rem, 13vh, 8rem) 0 clamp(3rem, 8vh, 5rem);
+  }
+
+  .name{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(2.4rem, 7.5vw, 4.6rem);
+    line-height:1.03;
+    letter-spacing:-0.028em;
+    margin:0;
+  }
+
+  .rule{
+    width:64px;
+    height:2px;
+    background:var(--amber);
+    margin:1.6rem 0 1.5rem;
+  }
+
+  .intro{
+    max-width:60ch;
+    font-size:clamp(1.12rem, 1.02rem + 0.5vw, 1.34rem);
+    line-height:1.58;
+    margin:0 0 2rem;
+    color:#d5d2cc;
+  }
+
+  .intro em{
+    font-style:normal;
+    color:var(--bone);
+    border-bottom:1px solid var(--amber-dim);
+    padding-bottom:1px;
+  }
+
+  .links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.6rem;
+    font-family:var(--display);
+    font-size:0.94rem;
+    font-weight:500;
+  }
+
+  .links a{
+    color:var(--bone);
+    border-bottom:1px solid var(--line);
+    padding-bottom:3px;
+    transition:border-color .18s ease, color .18s ease;
+  }
+  .links a:hover{border-color:var(--amber); color:var(--amber);}
+
+  /* ---------- estrutura de seção ---------- */
+
+  section{
+    border-top:1px solid var(--line);
+    padding:clamp(2.6rem, 6vh, 4rem) 0;
+    display:grid;
+    grid-template-columns:190px minmax(0, 1fr);
+    gap:clamp(1rem, 4vw, 3rem);
+  }
+
+  .label{
+    font-family:var(--display);
+    font-size:0.9rem;
+    font-weight:500;
+    color:var(--muted);
+    letter-spacing:0.01em;
+    margin:0;
+    position:sticky;
+    top:2rem;
+    align-self:start;
+  }
+
+  .col{max-width:66ch;}
+  .col > *:first-child{margin-top:0;}
+  .col > *:last-child{margin-bottom:0;}
+
+  /* ---------- trabalho atual ---------- */
+
+  .role{
+    font-family:var(--display);
+    font-size:1.22rem;
+    font-weight:600;
+    letter-spacing:-0.012em;
+    margin:0 0 0.15rem;
+  }
+
+  .meta{
+    font-family:var(--display);
+    font-size:0.86rem;
+    font-weight:400;
+    color:var(--muted);
+    margin:0 0 1.1rem;
+  }
+
+  p{margin:0 0 1.05rem;}
+
+  ul.plain{
+    list-style:none;
+    margin:0 0 1.1rem;
+    padding:0;
+  }
+  ul.plain li{
+    padding-left:1.15rem;
+    position:relative;
+    margin-bottom:0.7rem;
+  }
+  ul.plain li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0.72em;
+    width:5px;
+    height:1px;
+    background:var(--amber-dim);
+  }
+
+  /* ---------- projetos ---------- */
+
+  .project{
+    padding:1.6rem 0;
+    border-bottom:1px solid var(--line);
+  }
+  .project:first-child{padding-top:0;}
+  .project:last-child{border-bottom:none; padding-bottom:0;}
+
+  .project h3{
+    font-family:var(--display);
+    font-size:1.24rem;
+    font-weight:600;
+    letter-spacing:-0.012em;
+    margin:0 0 0.3rem;
+  }
+  .project h3 a{
+    border-bottom:1px solid transparent;
+    transition:border-color .18s ease, color .18s ease;
+  }
+  .project h3 a:hover{color:var(--amber); border-color:var(--amber-dim);}
+
+  .project p{margin:0 0 0.85rem;}
+
+  .stack{
+    font-family:var(--display);
+    font-size:0.82rem;
+    color:var(--muted);
+    margin:0;
+  }
+
+  .demo{
+    display:inline-block;
+    font-family:var(--display);
+    font-size:0.84rem;
+    font-weight:500;
+    color:var(--amber);
+    border:1px solid var(--amber-dim);
+    padding:0.32rem 0.75rem;
+    margin-bottom:0.85rem;
+    transition:background .18s ease, color .18s ease;
+  }
+  .demo:hover{background:var(--amber); color:var(--ink);}
+
+  /* ---------- ferramentas ---------- */
+
+  .tools{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));
+    gap:1.5rem 2rem;
+  }
+  .tools h4{
+    font-family:var(--display);
+    font-size:0.86rem;
+    font-weight:500;
+    color:var(--amber);
+    margin:0 0 0.35rem;
+  }
+  .tools p{
+    font-size:0.98rem;
+    line-height:1.5;
+    margin:0;
+    color:#cfccc6;
+  }
+
+  /* ---------- contato ---------- */
+
+  .contact a{
+    border-bottom:1px solid var(--line);
+    padding-bottom:2px;
+    transition:border-color .18s ease, color .18s ease;
+  }
+  .contact a:hover{border-color:var(--amber); color:var(--amber);}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:2rem 0 3rem;
+    font-family:var(--display);
+    font-size:0.82rem;
+    color:var(--muted);
+  }
+
+  /* ---------- entrada ---------- */
+
+  .fade{
+    opacity:0;
+    transform:translateY(10px);
+    animation:rise .7s cubic-bezier(.22,.68,.32,1) forwards;
+  }
+  .fade:nth-child(2){animation-delay:.07s;}
+  .fade:nth-child(3){animation-delay:.13s;}
+  .fade:nth-child(4){animation-delay:.19s;}
+
+  @keyframes rise{to{opacity:1; transform:none;}}
+
+  @media (prefers-reduced-motion: reduce){
+    .fade{animation:none; opacity:1; transform:none;}
+    *{transition-duration:.01ms !important;}
+  }
+
+  /* ---------- mobile ---------- */
+
+  @media (max-width: 720px){
+    section{
+      grid-template-columns:1fr;
+      gap:0.9rem;
+    }
+    .label{
+      position:static;
+      color:var(--amber);
+    }
+    .links{gap:1.1rem 1.4rem;}
+  }
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+  <header>
+    <h1 class="name fade">Eduardo<br>Jesus Dal Pizzol</h1>
+
+    <!-- FOTO: se quiser incluir, cole aqui e descomente.
+         <img src="foto.jpg" alt="" width="120" height="120"
+              style="border-radius:50%;object-fit:cover;margin:1.5rem 0 0;">
+    -->
+
+    <div class="rule fade"></div>
+
+    <p class="intro fade">
+      Estudante de Engenharia de Software na UnB, no 4º semestre. Hoje escrevo
+      automações em Python no <em>Ministério da Ciência, Tecnologia e Inovação</em>,
+      onde transformo relatórios em PDF de centenas de páginas em dados que dá
+      para analisar. Gosto de problema com restrição clara: algoritmo, estrutura
+      de dados, sistema que não pode quebrar.
+    </p>
+
+    <nav class="links fade">
+      <a href="https://github.com/Edupizzol">GitHub</a>
+      <a href="https://www.linkedin.com/in/eduardo-jesus-dal-pizzol-343785380/">LinkedIn</a>
+      <a href="mailto:edupizzol16@gmail.com">edupizzol16@gmail.com</a>
+      <!-- TROCAR-CV: coloque curriculo.pdf na mesma pasta deste arquivo -->
+      <a href="curriculo.pdf">Currículo em PDF</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2 class="label">Agora</h2>
+    <div class="col">
+      <p class="role">Estagiário em desenvolvimento de software</p>
+      <p class="meta">Ministério da Ciência, Tecnologia e Inovação — desde agosto de 2026</p>
+
+      <p>
+        Trabalho na coordenação responsável pelo PADIS, o programa federal de
+        incentivo à indústria de semicondutores. O time analisa relatórios que as
+        empresas beneficiárias enviam todo ano, e boa parte desse trabalho era
+        manual.
+      </p>
+
+      <ul class="plain">
+        <li>
+          Desenvolvo funcionalidades para a ferramenta interna que lê esses
+          relatórios em PDF e separa os gastos por categoria e por empresa,
+          em Python com PyMuPDF, PyQt5 e openpyxl.
+        </li>
+        <li>
+          Fiz uma prova de conceito de extração e resumo automático usando um
+          modelo de linguagem rodando localmente, e escrevi a nota técnica com
+          a análise de infraestrutura, custo e esforço que a chefia usou para decidir.
+        </li>
+        <li>
+          Assumi a manutenção do painel de Power BI do programa: encontrei a
+          origem das inconsistências, migrei a fonte de dados quebrada e refiz as
+          etapas de transformação.
+        </li>
+      </ul>
+
+      <p>
+        O código fica em repositório compartilhado com pesquisadores da área, então
+        trabalho em branches separadas e converso com os analistas que vão usar a
+        ferramenta antes de decidir como ela funciona.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="label">Projetos</h2>
+    <div class="col">
+
+      <article class="project">
+        <!-- TROCAR-REPO -->
+        <h3><a href="https://github.com/Edupizzol">Parnas</a></h3>
+        <p>
+          Plataforma de gestão financeira para microempresas, feita como projeto
+          da disciplina de Métodos de Desenvolvimento de Software. Lidero o time
+          de 12 pessoas: planejei as 8 sprints, defini a arquitetura e o stack,
+          revisei os pull requests e montei a esteira de CI/CD. Modelei o banco
+          com 12 entidades.
+        </p>
+        <p class="stack">Flask, SQLAlchemy, PostgreSQL, JWT, React, Vite, GitHub Actions</p>
+      </article>
+
+      <article class="project">
+        <!-- TROCAR-REPO -->
+        <h3><a href="https://github.com/Edupizzol">Juiz Online de Férias</a></h3>
+        <!-- TROCAR-DEMO: coloque aqui o link do deploy -->
+        <a class="demo" href="#">Ver funcionando</a>
+        <p>
+          Um juiz online completo, no espírito do Codeforces: o usuário envia o
+          código, o sistema executa dentro de um sandbox isolado, compara a saída
+          com os casos de teste e devolve o veredito. Nasceu de querer entender
+          como a plataforma que eu uso para treinar funciona por dentro.
+        </p>
+        <p class="stack">Python, Flask, execução isolada</p>
+      </article>
+
+      <article class="project">
+        <!-- TROCAR-REPO -->
+        <h3><a href="https://github.com/Edupizzol">Análise de reviews com grafos</a></h3>
+        <p>
+          Projeto de Estrutura de Dados 2, em C/C++, onde fui líder técnico.
+          Construímos grafos de coocorrência sobre reviews de e-commerce, com
+          Quicksort de pivô por mediana de três e travessia iterativa de árvores
+          usando pilha própria para não estourar a pilha de chamadas.
+        </p>
+        <p class="stack">C, C++, grafos, algoritmos de ordenação</p>
+      </article>
+
+      <article class="project">
+        <!-- TROCAR-REPO -->
+        <h3><a href="https://github.com/Edupizzol">Xadrez em orientação a objetos</a></h3>
+        <p>
+          Xadrez jogável escrito para exercitar padrões de projeto: estado do
+          tabuleiro, validação de movimento e as regras que sempre complicam
+          (roque, en passant, promoção) tratadas de forma extensível.
+        </p>
+        <p class="stack">Orientação a objetos, padrões de projeto</p>
+      </article>
+
+      <article class="project">
+        <!-- TROCAR-REPO -->
+        <h3><a href="https://github.com/Edupizzol">Classificador Iris</a></h3>
+        <p>
+          Pipeline de machine learning do começo ao fim — pré-processamento,
+          engenharia de atributos, treino supervisionado e validação de métricas.
+          Projeto de estudo, feito para entender cada etapa em vez de chamar
+          uma função pronta.
+        </p>
+        <p class="stack">Scikit-Learn, Pandas, NumPy</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="label">Ensino</h2>
+    <div class="col">
+      <p class="role">Monitor de graduação, UnB</p>
+      <p class="meta">Estruturas de Dados, Algoritmos e Programação, Álgebra Linear — desde 2025</p>
+      <p>
+        Atendo mais de 60 alunos por semestre em laboratório. A maior parte do
+        tempo é ponteiro, alocação dinâmica e análise de complexidade — os três
+        lugares onde todo mundo trava. Explicar a mesma ideia de cinco formas
+        diferentes até uma pegar mudou bastante como eu escrevo código.
+      </p>
+      <p class="role" style="margin-top:1.6rem;">Pesquisador-desenvolvedor, AI-Lab UnB</p>
+      <p class="meta">Projeto makers26_1 — desde maio de 2026</p>
+      <p>
+        Desenvolvimento e análise de dados em projetos internos do laboratório de
+        inteligência artificial.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="label">Ferramentas</h2>
+    <div class="col">
+      <div class="tools">
+        <div>
+          <h4>Linguagens</h4>
+          <p>Python, C, C++, Java, JavaScript, SQL</p>
+        </div>
+        <div>
+          <h4>Back-end e web</h4>
+          <p>Flask, Django, React, APIs REST, JWT</p>
+        </div>
+        <div>
+          <h4>Dados</h4>
+          <p>Pandas, NumPy, Scikit-Learn, PostgreSQL, Power BI, modelos locais com Ollama</p>
+        </div>
+        <div>
+          <h4>Ambiente</h4>
+          <p>Git, Docker, GitHub Actions, Linux no dia a dia</p>
+        </div>
+      </div>
+      <p style="margin-top:1.6rem;">
+        Treino programação competitiva em C++ com alguma regularidade, mirando
+        as competições do ano. É o que mantém a parte algorítmica afiada quando
+        o trabalho do dia é integração e manutenção.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="label">Contato</h2>
+    <div class="col contact">
+      <p>
+        Estou aberto a conversar sobre estágio, projeto ou qualquer coisa que
+        envolva construir software de verdade.
+      </p>
+      <p>
+        <a href="mailto:edupizzol16@gmail.com">edupizzol16@gmail.com</a><br>
+        <a href="https://github.com/Edupizzol">github.com/Edupizzol</a><br>
+        <a href="https://www.linkedin.com/in/eduardo-jesus-dal-pizzol-343785380/">LinkedIn</a>
+      </p>
+      <p style="color:var(--muted);font-size:0.95rem;">Brasília, DF</p>
+    </div>
+  </section>
+
+  <footer>
+    Feito à mão, em HTML e CSS.
+  </footer>
+
+</div>
+
+</body>
+</html>
