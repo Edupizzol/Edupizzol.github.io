@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesquisa e artigos · Eduardo Jesus Dal Pizzol</title>
+<meta name="description" content="Dois artigos em formato IEEE de deep learning com PyTorch: lesões dentárias em radiografias panorâmicas e tumores cerebrais em ressonância magnética.">
+<meta name="author" content="Eduardo Jesus Dal Pizzol">
+<link rel="canonical" href="https://edupizzol.github.io/projetos/artigos.html">
+<meta name="theme-color" content="#f8f8f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1114" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Eduardo Jesus Dal Pizzol">
+<meta property="og:title" content="Pesquisa e artigos · Eduardo Jesus Dal Pizzol">
+<meta property="og:description" content="Dois artigos em formato IEEE de deep learning com PyTorch: lesões dentárias em radiografias panorâmicas e tumores cerebrais em ressonância magnética.">
+<meta property="og:url" content="https://edupizzol.github.io/projetos/artigos.html">
+<meta property="og:image" content="https://edupizzol.github.io/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Eduardo Jesus Dal Pizzol, AI Engineering: Machine Learning, NLP e LLMs">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="doc-head">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Eduardo Jesus Dal Pizzol, início">
+      <svg class="tile" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="tw" width="24" height="24"/><path class="tb" d="M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z"/></svg>
+      Eduardo Jesus Dal Pizzol
+    </a>
+    <nav class="site-nav" aria-label="Seções do início">
+      <ul>
+        <li><a href="../#destaques">Destaques</a></li>
+        <li><a href="../#experiencia">Experiência</a></li>
+        <li><a href="../#competicoes">Competições de IA</a></li>
+        <li><a href="../#pesquisa">Pesquisa e artigos</a></li>
+        <li><a href="../#engenharia">Engenharia de software</a></li>
+        <li><a href="../#programacao">Programação competitiva</a></li>
+        <li><a href="../#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo" class="wrap">
+  <a class="back" href="../"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M13 8H4M7.5 4.5 4 8l3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Voltar ao início</a>
+
+  <div class="detail-head">
+    <div>
+      <h1>Pesquisa e artigos</h1>
+      <p class="lede">Dois artigos em formato IEEE da disciplina Inteligência Artificial II (UnB, 2026), em coautoria com Matheus Lemes Amaral. Artigos científicos na área de machine learning.</p>
+    </div>
+    <dl class="entry-meta">
+      <div><dt>Disciplina</dt><dd>Inteligência Artificial II (UnB, 2026)</dd></div>
+      <div><dt>Formato</dt><dd>IEEE</dd></div>
+      <div><dt>Coautoria</dt><dd>Matheus Lemes Amaral</dd></div>
+    </dl>
+  </div>
+
+  <div class="detail-body">
+<div>
+  <article class="paper">
+    <h2>Comparação entre ResNet50 e EfficientNet-B0 na classificação de lesões dentárias em radiografias panorâmicas por transfer learning</h2>
+    <p class="authors">Dal Pizzol e Amaral</p>
+    <div class="paper-grid">
+      <div class="spec-wrap">
+        <h3 class="spec-title"><svg class="tile" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="tw" width="24" height="24"/><path class="tb" d="M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z"/></svg> Números e condições</h3>
+        <table class="spec" role="table">
+          <colgroup><col class="c-param"><col class="c-val"><col></colgroup>
+          <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Parâmetro</th><th scope="col" role="columnheader">Valor</th><th scope="col" role="columnheader">Condição</th></tr></thead>
+          <tbody role="rowgroup">
+          <tr role="row"><th scope="row" role="rowheader">AUC</th><td class="val" role="cell">0,856 vs. 0,855</td><td class="cond" role="cell">equivalente entre os dois modelos</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">NLL (calibração)</th><td class="val" role="cell">0,362 vs. 0,417</td><td class="cond" role="cell">EfficientNet-B0 mais bem calibrada; IC 95% da diferença por bootstrap</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Parâmetros da EfficientNet-B0</th><td class="val" role="cell">~6× menos</td><td class="cond" role="cell">em relação à ResNet50</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Dentes classificados</th><td class="val" role="cell">2.996</td><td class="cond" role="cell">conjunto público DENTEX, divisão por radiografia, 3 sementes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3 class="spec-title"><svg class="tile" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="tw" width="24" height="24"/><path class="tb" d="M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z"/></svg> Método e resultado</h3>
+        <ul class="bullets">
+          <li>Classificação multirrótulo (cárie, cárie profunda e lesão periapical) em 2.996 dentes do conjunto público DENTEX, com divisão por radiografia para evitar vazamento de dados e 3 sementes.</li>
+          <li>AUC equivalente (0,856 vs. 0,855), mas a EfficientNet-B0, com ~6× menos parâmetros, foi mais bem calibrada (NLL 0,362 vs. 0,417; IC 95% da diferença por bootstrap).</li>
+        </ul>
+        <ul class="stack" aria-label="Stack"><li class="stack-label">Stack</li><li>PyTorch</li><li>torchvision</li><li>CLAHE</li><li>bootstrap pareado</li></ul>
+        <ul class="links"><li><a href="https://github.com/Edupizzol/Papers/blob/main/2026-lesoes-dentarias-resnet-efficientnet.pdf">Artigo (PDF)</a></li><li><a href="https://github.com/Edupizzol/odonto-cnn">Código (odonto-cnn)</a></li></ul>
+      </div>
+    </div>
+  </article>
+  <article class="paper">
+    <h2>Detecção de tumores cerebrais em imagens de ressonância magnética por transfer learning com validação cruzada por grupos</h2>
+    <p class="authors">Amaral e Dal Pizzol</p>
+    <div class="paper-grid">
+      <div class="spec-wrap">
+        <h3 class="spec-title"><svg class="tile" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="tw" width="24" height="24"/><path class="tb" d="M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z"/></svg> Números e condições</h3>
+        <table class="spec" role="table">
+          <colgroup><col class="c-param"><col class="c-val"><col></colgroup>
+          <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Parâmetro</th><th scope="col" role="columnheader">Valor</th><th scope="col" role="columnheader">Condição</th></tr></thead>
+          <tbody role="rowgroup">
+          <tr role="row"><th scope="row" role="rowheader">AUC em validação cruzada</th><td class="val" role="cell">0,92</td><td class="cond" role="cell">ResNet-18 pré-treinada, validação cruzada estratificada por grupos (5 folds × 3 sementes)</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">AUC no teste</th><td class="val" role="cell">0,99 vs. 0,73</td><td class="cond" role="cell">ResNet-18 pré-treinada vs. CNN treinada do zero; teste com só 34 imagens</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Cópias idênticas removidas</th><td class="val" role="cell">25</td><td class="cond" role="cell">antes do agrupamento de quase-duplicatas por hash perceptual</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3 class="spec-title"><svg class="tile" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="tw" width="24" height="24"/><path class="tb" d="M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z"/></svg> Método e resultado</h3>
+        <ul class="bullets">
+          <li>Remoção de 25 cópias idênticas, agrupamento de quase-duplicatas por hash perceptual e validação cruzada estratificada por grupos (5 folds × 3 sementes).</li>
+          <li>A ResNet-18 pré-treinada atingiu AUC de 0,92 em validação cruzada. No teste, teve AUC de 0,99 contra 0,73 da CNN treinada do zero (teste com só 34 imagens).</li>
+        </ul>
+        <ul class="stack" aria-label="Stack"><li class="stack-label">Stack</li><li>PyTorch</li><li>torchvision</li><li>OpenCV</li><li>dHash</li></ul>
+        <ul class="links"><li><a href="https://github.com/Edupizzol/Papers/blob/main/2026-tumor-cerebral-rm-validacao-por-grupos.pdf">Artigo (PDF)</a></li></ul>
+      </div>
+    </div>
+  </article>
+    <p class="note">Todos os artigos: <a href="https://github.com/Edupizzol/Papers">github.com/Edupizzol/Papers</a></p>
+</div>
+  </div>
+
+  <a class="back" href="../"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M13 8H4M7.5 4.5 4 8l3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Voltar ao início</a>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>© 2026 Eduardo Jesus Dal Pizzol</p>
+    <p><a href="../curriculo.pdf">Currículo (PDF)</a></p>
+  </div>
+</footer>
+</body>
+</html>
