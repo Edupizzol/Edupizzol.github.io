@@ -1,0 +1,590 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T16:00:00-03:00",
+  "title": "Design System: Eduardo Jesus Dal Pizzol · Portfólio",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Datasheet Paper",
+        "canonical": "#f8f8f5",
+        "oklch": "oklch(97.8% 0.004 106)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#242422",
+          "#40403d",
+          "#5e5e5b",
+          "#80807e",
+          "#a5a5a2",
+          "#cbcbc8",
+          "#efefec"
+        ],
+        "cssVar": "--paper",
+        "theme": "light (default)"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#121417",
+        "oklch": "oklch(19.0% 0.007 258)",
+        "tonalRamp": [
+          "#090b0e",
+          "#222427",
+          "#3d4043",
+          "#5b5e62",
+          "#7e8084",
+          "#a2a5a9",
+          "#c8cbcf",
+          "#eceff3"
+        ],
+        "cssVar": "--ink",
+        "theme": "light (default)"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Graphite Ink",
+        "canonical": "#444a52",
+        "oklch": "oklch(40.7% 0.016 256)",
+        "tonalRamp": [
+          "#070b12",
+          "#1f242c",
+          "#3a4048",
+          "#585e67",
+          "#7a818a",
+          "#9ea5ae",
+          "#c4cbd5",
+          "#e8eff9"
+        ],
+        "cssVar": "--ink-2",
+        "theme": "light (default)"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#c4c8ce",
+        "oklch": "oklch(83.1% 0.009 258)",
+        "tonalRamp": [
+          "#090b0f",
+          "#212429",
+          "#3d4045",
+          "#5a5e63",
+          "#7d8086",
+          "#a1a5ab",
+          "#c7cbd1",
+          "#ebeff5"
+        ],
+        "cssVar": "--rule",
+        "theme": "light (default)"
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Azulejo Blue",
+        "canonical": "#1d4fa3",
+        "oklch": "oklch(44.5% 0.146 260)",
+        "tonalRamp": [
+          "#00003c",
+          "#001d5c",
+          "#05398b",
+          "#275aaf",
+          "#4a7ed6",
+          "#73a4f7",
+          "#adccfe",
+          "#e6effe"
+        ],
+        "cssVar": "--accent",
+        "theme": "light (default)"
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Deep Azulejo",
+        "canonical": "#163d80",
+        "oklch": "oklch(37.4% 0.122 261)",
+        "tonalRamp": [
+          "#000038",
+          "#001e58",
+          "#153c7f",
+          "#335ca1",
+          "#557fc8",
+          "#78a5f1",
+          "#b0ccfa",
+          "#e6effe"
+        ],
+        "cssVar": "--accent-hover",
+        "theme": "light (default)"
+      },
+      "on-accent": {
+        "role": "primary",
+        "displayName": "On Accent",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#808080",
+          "#a4a4a4",
+          "#cacaca",
+          "#eeeeee"
+        ],
+        "cssVar": "--on-accent",
+        "theme": "light (default)"
+      },
+      "select": {
+        "role": "neutral",
+        "displayName": "Selection Blue",
+        "canonical": "#c9d8f2",
+        "oklch": "oklch(87.9% 0.039 262)",
+        "tonalRamp": [
+          "#030a1c",
+          "#192437",
+          "#344055",
+          "#515e74",
+          "#738198",
+          "#97a5be",
+          "#bccbe5",
+          "#e6efff"
+        ],
+        "cssVar": "--select",
+        "theme": "light (default)"
+      },
+      "tile-blue": {
+        "role": "neutral",
+        "displayName": "Tile Blue",
+        "canonical": "#1d4fa3",
+        "oklch": "oklch(44.5% 0.146 260)",
+        "tonalRamp": [
+          "#00003c",
+          "#001d5c",
+          "#05398b",
+          "#275aaf",
+          "#4a7ed6",
+          "#73a4f7",
+          "#adccfe",
+          "#e6effe"
+        ],
+        "cssVar": "--tile-blue",
+        "theme": "fixed in both themes"
+      },
+      "tile-white": {
+        "role": "neutral",
+        "displayName": "Tile White",
+        "canonical": "#f4f4f0",
+        "oklch": "oklch(96.6% 0.005 106)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#242421",
+          "#40403d",
+          "#5e5e5a",
+          "#80807d",
+          "#a5a5a1",
+          "#cbcbc7",
+          "#efefeb"
+        ],
+        "cssVar": "--tile-white",
+        "theme": "fixed in both themes"
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Datasheet Paper (dark)",
+        "canonical": "#0f1114",
+        "oklch": "oklch(17.7% 0.007 258)",
+        "tonalRamp": [
+          "#090b0e",
+          "#222427",
+          "#3d4043",
+          "#5b5e62",
+          "#7e8084",
+          "#a2a5a9",
+          "#c8cbcf",
+          "#eceff3"
+        ],
+        "cssVar": "--paper",
+        "theme": "dark (prefers-color-scheme)"
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Ink (dark)",
+        "canonical": "#e8eaed",
+        "oklch": "oklch(93.6% 0.005 258)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232426",
+          "#3e4042",
+          "#5c5e60",
+          "#7e8083",
+          "#a3a5a7",
+          "#c9cbcd",
+          "#edeff2"
+        ],
+        "cssVar": "--ink",
+        "theme": "dark (prefers-color-scheme)"
+      },
+      "ink-2-dark": {
+        "role": "neutral",
+        "displayName": "Graphite Ink (dark)",
+        "canonical": "#a8afb9",
+        "oklch": "oklch(75.2% 0.016 257)",
+        "tonalRamp": [
+          "#070b12",
+          "#1f242c",
+          "#3a4049",
+          "#585e67",
+          "#7a818a",
+          "#9ea5af",
+          "#c4cbd5",
+          "#e8effa"
+        ],
+        "cssVar": "--ink-2",
+        "theme": "dark (prefers-color-scheme)"
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Hairline (dark)",
+        "canonical": "#30353d",
+        "oklch": "oklch(32.7% 0.016 260)",
+        "tonalRamp": [
+          "#070b12",
+          "#20242c",
+          "#3b4048",
+          "#585e67",
+          "#7b818a",
+          "#9fa5af",
+          "#c5cbd5",
+          "#e8eff9"
+        ],
+        "cssVar": "--rule",
+        "theme": "dark (prefers-color-scheme)"
+      },
+      "accent-dark": {
+        "role": "primary",
+        "displayName": "Azulejo Blue (dark)",
+        "canonical": "#8fb3f2",
+        "oklch": "oklch(76.4% 0.099 261)",
+        "tonalRamp": [
+          "#000234",
+          "#052053",
+          "#203e73",
+          "#3d5d95",
+          "#5e80bc",
+          "#82a5e3",
+          "#b0ccfb",
+          "#e6effe"
+        ],
+        "cssVar": "--accent",
+        "theme": "dark (prefers-color-scheme)"
+      },
+      "accent-hover-dark": {
+        "role": "primary",
+        "displayName": "Deep Azulejo (dark)",
+        "canonical": "#b4cdf7",
+        "oklch": "oklch(84.4% 0.065 261)",
+        "tonalRamp": [
+          "#000826",
+          "#112343",
+          "#2c4062",
+          "#485e83",
+          "#6a81a8",
+          "#8ea6ce",
+          "#b3ccf6",
+          "#e6effe"
+        ],
+        "cssVar": "--accent-hover",
+        "theme": "dark (prefers-color-scheme)"
+      },
+      "on-accent-dark": {
+        "role": "primary",
+        "displayName": "On Accent (dark)",
+        "canonical": "#0f1114",
+        "oklch": "oklch(17.7% 0.007 258)",
+        "tonalRamp": [
+          "#090b0e",
+          "#222427",
+          "#3d4043",
+          "#5b5e62",
+          "#7e8084",
+          "#a2a5a9",
+          "#c8cbcf",
+          "#eceff3"
+        ],
+        "cssVar": "--on-accent",
+        "theme": "dark (prefers-color-scheme)"
+      },
+      "select-dark": {
+        "role": "neutral",
+        "displayName": "Selection Blue (dark)",
+        "canonical": "#29426e",
+        "oklch": "oklch(38.2% 0.082 261)",
+        "tonalRamp": [
+          "#00062c",
+          "#0b224b",
+          "#263f6b",
+          "#435d8c",
+          "#6481b1",
+          "#88a5d8",
+          "#b0ccfb",
+          "#e6efff"
+        ],
+        "cssVar": "--select",
+        "theme": "dark (prefers-color-scheme)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name on the home page only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Project title on detail pages."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "Uppercase condensed section heads beside the tile under a 3px ink rule."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Entry and paper titles; step-1 in the two-column software grid."
+      },
+      "value": {
+        "displayName": "Value",
+        "purpose": "Datasheet value cells, accent, tabular."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero and detail-head introduction, ink-2, max 60ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, tabular figures, max 68 to 72ch."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Conditions, metadata, nav, notes, footer."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Table titles beside the tile over a 3px ink rule."
+      },
+      "label-micro": {
+        "displayName": "Label Micro",
+        "purpose": "Metadata terms and status tags."
+      }
+    },
+    "typeScale": [
+      {
+        "name": "step--1",
+        "value": "clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem)"
+      },
+      {
+        "name": "step-0",
+        "value": "clamp(1rem, 0.97rem + 0.15vw, 1.0625rem)"
+      },
+      {
+        "name": "step-1",
+        "value": "clamp(1.0625rem, 1rem + 0.3vw, 1.25rem)"
+      },
+      {
+        "name": "step-2",
+        "value": "clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)"
+      },
+      {
+        "name": "step-3",
+        "value": "clamp(1.625rem, 1.3rem + 1.4vw, 2.375rem)"
+      },
+      {
+        "name": "step-4",
+        "value": "clamp(2.25rem, 1.3rem + 4vw, 4.5rem)"
+      }
+    ],
+    "rules": [
+      {
+        "name": "document-rule",
+        "value": "3px solid var(--ink)",
+        "purpose": "Opens every section, table title, detail metadata block and paper."
+      },
+      {
+        "name": "header-rule",
+        "value": "1px solid var(--ink)",
+        "purpose": "Closes datasheet column headers."
+      },
+      {
+        "name": "hairline",
+        "value": "1px solid var(--rule)",
+        "purpose": "Separates rows, entries, list items, header strip, footer."
+      }
+    ],
+    "focus": {
+      "value": "outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 1px",
+      "purpose": "Global :focus-visible ring."
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "state-color",
+        "value": "0.15s ease",
+        "purpose": "Color, underline, background and border transitions on links and the button; the only motion in the system."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition-duration: 0.01ms; scroll-behavior: auto",
+        "purpose": "Applied under prefers-reduced-motion: reduce; smooth anchor scrolling only under no-preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "table-stack",
+        "value": "max-width: 640px"
+      },
+      {
+        "name": "entry-grid",
+        "value": "min-width: 900px"
+      },
+      {
+        "name": "hero-split",
+        "value": "min-width: 1024px"
+      },
+      {
+        "name": "nav-wrap",
+        "value": "max-width: 1100px"
+      }
+    ],
+    "fonts": [
+      {
+        "family": "Archivo",
+        "source": "assets/fonts/archivo-latin.woff2, archivo-latin-ext.woff2 (self-hosted, SIL OFL 1.1)",
+        "axes": "wght 100-900, wdth 62-125"
+      }
+    ],
+    "ornament": {
+      "name": "Azulejo tile",
+      "description": "2x2 Athos Bulcão-style module, tile-blue on tile-white, fixed in both themes; 22px header mark, 14px section/table marker, favicon.",
+      "svg": "<svg class=\"ds-tile\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect fill=\"var(--tile-white, #f4f4f0)\" width=\"24\" height=\"24\"/><path fill=\"var(--tile-blue, #1d4fa3)\" d=\"M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z\"/></svg>"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single solid action: download the CV.",
+      "html": "<a class=\"ds-btn\" href=\"#\"><svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M8 2v8M4.5 6.5 8 10l3.5-3.5M3 13.5h10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/></svg>Currículo (PDF)</a>",
+      "css": ".ds-btn { font-family: var(--font, \"Archivo\", ui-sans-serif, system-ui, sans-serif); display: inline-flex; align-items: center; gap: 0.5rem; min-height: 2.875rem; padding: 0.625rem 1.125rem; background: var(--accent); color: var(--on-accent); border: 1px solid var(--accent); border-radius: 2px; font-weight: 600; text-decoration: none; transition: background-color 0.15s ease, border-color 0.15s ease; } .ds-btn svg { width: 1em; height: 1em; } .ds-btn:hover { background: var(--accent-hover); border-color: var(--accent-hover); } .ds-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Link Action Row",
+      "kind": "custom",
+      "refersTo": "button-primary",
+      "description": "Secondary actions beside the primary button are plain underlined links, never ghost buttons.",
+      "html": "<ul class=\"ds-actions\"><li><a class=\"ds-btn\" href=\"#\">Currículo (PDF)</a></li><li><a href=\"#\">GitHub</a></li><li><a href=\"#\">LinkedIn</a></li><li><a href=\"#\">E-mail</a></li></ul>",
+      "css": ".ds-actions { font-family: var(--font, \"Archivo\", ui-sans-serif, system-ui, sans-serif); display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.5rem; list-style: none; margin: 0; padding: 0; } .ds-actions a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; transition: color 0.15s ease; } .ds-actions a:not(.ds-btn) { font-weight: 550; } .ds-actions a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; } .ds-actions a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; } .ds-actions .ds-btn { display: inline-flex; align-items: center; min-height: 2.875rem; padding: 0.625rem 1.125rem; background: var(--accent); color: var(--on-accent); border: 1px solid var(--accent); border-radius: 2px; font-weight: 600; text-decoration: none; } .ds-actions .ds-btn:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); }"
+    },
+    {
+      "name": "Datasheet Table",
+      "kind": "custom",
+      "refersTo": "spec-value",
+      "description": "Parâmetro · Valor · Condição: every result with its value and its test condition.",
+      "html": "<div class=\"ds-spec-wrap\"><h2 class=\"ds-spec-title\"><svg class=\"ds-tile\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect fill=\"var(--tile-white, #f4f4f0)\" width=\"24\" height=\"24\"/><path fill=\"var(--tile-blue, #1d4fa3)\" d=\"M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z\"/></svg> Destaques</h2><table class=\"ds-spec\"><thead><tr><th>Parâmetro</th><th>Valor</th><th>Condição</th></tr></thead><tbody><tr><th><a href=\"#\">Avaliação técnica da IBM</a></th><td class=\"ds-val\">1º lugar</td><td class=\"ds-cond\">Hackathon PMI-DF 2026, 20 equipes</td></tr><tr><th><a href=\"#\">Alunos atendidos</a></th><td class=\"ds-val\">~200</td><td class=\"ds-cond\">como monitor de graduação na UnB</td></tr></tbody></table></div>",
+      "css": ".ds-spec-wrap { font-family: var(--font, \"Archivo\", ui-sans-serif, system-ui, sans-serif); color: var(--ink); font-variant-numeric: tabular-nums; } .ds-spec-title { display: flex; align-items: center; gap: 0.625rem; margin: 0; font-size: var(--step-1); font-weight: 700; font-stretch: 80%; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 3px solid var(--ink); padding-bottom: 0.5rem; } .ds-spec { width: 100%; border-collapse: collapse; font-size: var(--step-0); } .ds-spec th, .ds-spec td { text-align: left; vertical-align: top; padding: 0.75rem 0.75rem 0.75rem 0; border-bottom: 1px solid var(--rule); } .ds-spec thead th { font-size: var(--step--1); font-weight: 600; color: var(--ink-2); padding-block: 0.5rem; border-bottom: 1px solid var(--ink); } .ds-spec tbody th { font-weight: 500; } .ds-spec tbody th a { color: var(--ink); text-decoration-line: underline; text-decoration-color: var(--rule); text-underline-offset: 0.2em; } .ds-spec tbody th a:hover { text-decoration-color: var(--ink); } .ds-spec tbody th a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; } .ds-val { color: var(--accent); font-weight: 700; font-stretch: 90%; font-size: var(--step-1); line-height: 1.3; white-space: nowrap; } .ds-cond { color: var(--ink-2); font-size: var(--step--1); line-height: 1.5; }"
+    },
+    {
+      "name": "Section Head",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Tile plus uppercase condensed heading under a 3px ink rule; opens every section.",
+      "html": "<div class=\"ds-section-head\"><svg class=\"ds-tile\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect fill=\"var(--tile-white, #f4f4f0)\" width=\"24\" height=\"24\"/><path fill=\"var(--tile-blue, #1d4fa3)\" d=\"M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z\"/></svg><h2>Competições de IA</h2></div>",
+      "css": ".ds-section-head { font-family: var(--font, \"Archivo\", ui-sans-serif, system-ui, sans-serif); display: flex; align-items: center; gap: 0.75rem; border-top: 3px solid var(--ink); padding-top: 0.875rem; color: var(--ink); } .ds-section-head h2 { margin: 0; font-size: var(--step-2); font-weight: 700; font-stretch: 80%; letter-spacing: 0.01em; text-transform: uppercase; line-height: 1.15; }"
+    },
+    {
+      "name": "Navigation Strip",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Document header: tile mark and name left, section index right.",
+      "html": "<header class=\"ds-head\"><a class=\"ds-brand\" href=\"#\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect fill=\"var(--tile-white, #f4f4f0)\" width=\"24\" height=\"24\"/><path fill=\"var(--tile-blue, #1d4fa3)\" d=\"M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z\"/></svg>Eduardo Jesus Dal Pizzol</a><nav><ul><li><a href=\"#\">Destaques</a></li><li><a href=\"#\">Experiência</a></li><li><a href=\"#\">Competições de IA</a></li><li><a href=\"#\">Contato</a></li></ul></nav></header>",
+      "css": ".ds-head { font-family: var(--font, \"Archivo\", ui-sans-serif, system-ui, sans-serif); display: flex; align-items: center; gap: 1rem 2rem; min-height: 3.75rem; border-bottom: 1px solid var(--rule); flex-wrap: wrap; } .ds-brand { display: inline-flex; align-items: center; gap: 0.625rem; color: var(--ink); font-weight: 650; font-size: var(--step--1); text-decoration: none; white-space: nowrap; } .ds-head nav { margin-left: auto; } .ds-head ul { display: flex; flex-wrap: wrap; list-style: none; gap: 0.25rem 1.375rem; margin: 0; padding: 0; } .ds-head nav a { display: inline-block; padding-block: 0.875rem; color: var(--ink-2); font-size: var(--step--1); font-weight: 500; text-decoration: none; white-space: nowrap; transition: color 0.15s ease; } .ds-head nav a:hover { color: var(--ink); text-decoration: underline; } .ds-head a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }"
+    },
+    {
+      "name": "Seal",
+      "kind": "chip",
+      "refersTo": "seal",
+      "description": "Accent-bordered square box stating an achieved result.",
+      "html": "<p class=\"ds-seal\">1º lugar na avaliação técnica da IBM (melhor código)</p>",
+      "css": ".ds-seal { font-family: var(--font, \"Archivo\", ui-sans-serif, system-ui, sans-serif); display: inline-block; margin: 0; border: 1px solid var(--accent); color: var(--accent); font-weight: 650; font-size: var(--step--1); line-height: 1.4; padding: 0.3rem 0.625rem; }"
+    },
+    {
+      "name": "Status Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Hairline-bordered uppercase label for a status or restriction; text, never color alone.",
+      "html": "<span class=\"ds-tag\">Em andamento</span> <span class=\"ds-tag\">Código não público</span>",
+      "css": ".ds-tag { font-family: var(--font, \"Archivo\", ui-sans-serif, system-ui, sans-serif); display: inline-block; border: 1px solid var(--rule); color: var(--ink-2); font-size: 0.75rem; font-weight: 650; font-stretch: 85%; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.1rem 0.45rem; white-space: nowrap; }"
+    },
+    {
+      "name": "Entry",
+      "kind": "card",
+      "refersTo": null,
+      "description": "Ruled list entry: metadata terms, title, org line, text, stack line and links; no box.",
+      "html": "<article class=\"ds-entry\"><dl class=\"ds-meta\"><div><dt>Período</dt><dd>Ago/2026 – Dez/2026</dd></div><div><dt>Local</dt><dd>Brasília/DF</dd></div></dl><div><h3>Estagiário em Desenvolvimento de Software</h3><p class=\"ds-org\">Ministério da Ciência, Tecnologia e Inovação (MCTI)</p><p>Ferramenta em Python que extrai e verifica relatórios de P&amp;D com NLP e um LLM local.</p><ul class=\"ds-stack\"><li>Python</li><li>NLP</li><li>SQLite</li></ul><a class=\"ds-more\" href=\"#\">Ver detalhes<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><path d=\"M3 8h9M8.5 4.5 12 8l-3.5 3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/></svg></a></div></article>",
+      "css": ".ds-entry { font-family: var(--font, \"Archivo\", ui-sans-serif, system-ui, sans-serif); display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 1rem clamp(1.5rem, 4vw, 4rem); padding-block: 2rem; border-top: 1px solid var(--rule); color: var(--ink); line-height: 1.6; } .ds-meta { margin: 0; font-size: var(--step--1); line-height: 1.5; } .ds-meta div + div { margin-top: 0.5rem; } .ds-meta dt { font-weight: 700; font-stretch: 80%; text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.75rem; color: var(--ink-2); } .ds-meta dd { margin: 0; } .ds-entry h3 { margin: 0 0 0.375rem; font-size: var(--step-2); font-weight: 680; font-stretch: 92%; letter-spacing: -0.01em; line-height: 1.15; } .ds-org { color: var(--ink-2); font-size: var(--step--1); margin: 0 0 0.875rem; } .ds-stack { display: flex; flex-wrap: wrap; list-style: none; margin: 0 0 1rem; padding: 0; font-size: var(--step--1); color: var(--ink-2); } .ds-stack li:not(:last-child)::after { content: \"\\00B7\"; padding-inline: 0.5em; color: var(--rule); } .ds-more { display: inline-flex; align-items: center; gap: 0.375rem; min-height: 2rem; color: var(--accent); font-weight: 550; text-underline-offset: 0.2em; } .ds-more svg { width: 0.95em; height: 0.95em; } .ds-more:hover { color: var(--accent-hover); text-decoration-thickness: 2px; } .ds-more:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Component Datasheet",
+    "overview": "**Creative North Star: \"The Component Datasheet\"**\n\nThe site reads as a printed technical datasheet for one engineer. Every result is a parameter with its value and its test condition set side by side, so a caveat is a column, not a footnote. The ground is paper-white with black ink; in dark mode the sheet inverts to graphite ink on near-black. Structure comes from rules, not containers: hairlines separate rows, and a heavy 3px ink rule opens every section, table and paper the way a document rule opens a clause.\n\nThere is exactly one hue, an azulejo blue, and it marks evidence and action: values, links, the primary button, the seal, the bullet squares and the focus ring. One grotesque family (Archivo, variable weight and width) carries everything, using its width axis to condense headings and labels and tabular figures so numbers align. The only ornament is a small 2×2 Athos Bulcão–style azulejo tile in blue and white, used as the header mark, the favicon and the marker beside every section and table title.\n\nDensity is that of a reference document: scannable rows, short measures (60 to 72ch), generous section spacing, no motion beyond color and underline transitions.",
+    "keyCharacteristics": [
+      "Paper and ink, with one azulejo blue reserved for values, links and actions.",
+      "Rules instead of boxes: 1px hairlines between rows, 3px ink rules at heads.",
+      "Parameter · Valor · Condição tables as the primary content structure.",
+      "One variable grotesque, width axis for condensed uppercase heads, tabular numerals everywhere.",
+      "The azulejo tile as the single, repeated ornament.",
+      "Flat: no shadows, no fills behind content, square corners."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "Azulejo Blue is the only hue. It means \"this is a measured value or something you can act on\"; never use it for decoration, backgrounds of content areas, or headings.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fixed Tile Rule",
+        "body": "The azulejo tile always renders in tile-blue on tile-white, in both themes. It is an object, not a themed surface.",
+        "section": "colors"
+      },
+      {
+        "name": "The Text-Not-Color Rule",
+        "body": "Status is always written (a seal, a tag, a condition cell), never conveyed by color alone.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "`font-variant-numeric: tabular-nums` is set on the body; numbers must align in every table and list.",
+        "section": "typography"
+      },
+      {
+        "name": "The Width-Axis Rule",
+        "body": "Condense with Archivo's width axis (80 to 92%), never with a second condensed family or with letter-spacing alone. Uppercase is reserved for headings and labels that name a block of data.",
+        "section": "typography"
+      },
+      {
+        "name": "The Rule-Weight Rule",
+        "body": "Use 3px ink to open a block, 1px ink to close a table header, 1px hairline to separate rows. Nothing else creates hierarchy between surfaces.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** put every number in a Parâmetro · Valor · Condição row, with the condition written beside the value.",
+      "**Do** open each section, table and paper with the 3px ink rule and the 14px azulejo tile.",
+      "**Do** keep Azulejo Blue for values, links, the primary button, seals, bullet squares and focus.",
+      "**Do** condense headings and labels with Archivo's width axis (80 to 92%) and keep tabular figures on.",
+      "**Do** state status in words with a tag or seal (square, 1px border), never by color alone.",
+      "**Do** keep text measures at 60 to 72ch and honor prefers-reduced-motion; motion is limited to 0.15s color and underline transitions."
+    ],
+    "donts": [
+      "**Don't** add shadows, rounded cards or filled content boxes; separate with rules.",
+      "**Don't** add decorative gradients or patterns; the only gradient in the system is the functional mask fade on the scrolling nav.",
+      "**Don't** introduce a second hue, a second type family, or theme the azulejo tile's colors.",
+      "**Don't** add ornaments beyond the single 2×2 azulejo tile, and don't enlarge it into a pattern or panel.",
+      "**Don't** use more than one solid primary button per viewport (the CV download); other actions are text links."
+    ]
+  }
+}

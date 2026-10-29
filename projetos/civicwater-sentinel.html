@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IBM Z Datathon 2026: CivicWater Sentinel · Eduardo Jesus Dal Pizzol</title>
+<meta name="description" content="Detecção de vazamentos em redes de água: a cada 5 minutos, compara a pressão medida com a prevista e aponta região, sensores e trecho suspeito, com trilha de auditoria.">
+<meta name="author" content="Eduardo Jesus Dal Pizzol">
+<link rel="canonical" href="https://edupizzol.github.io/projetos/civicwater-sentinel.html">
+<meta name="theme-color" content="#f8f8f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1114" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Eduardo Jesus Dal Pizzol">
+<meta property="og:title" content="IBM Z Datathon 2026: CivicWater Sentinel · Eduardo Jesus Dal Pizzol">
+<meta property="og:description" content="Detecção de vazamentos em redes de água: a cada 5 minutos, compara a pressão medida com a prevista e aponta região, sensores e trecho suspeito, com trilha de auditoria.">
+<meta property="og:url" content="https://edupizzol.github.io/projetos/civicwater-sentinel.html">
+<meta property="og:image" content="https://edupizzol.github.io/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Eduardo Jesus Dal Pizzol, AI Engineering: Machine Learning, NLP e LLMs">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="doc-head">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Eduardo Jesus Dal Pizzol, início">
+      <svg class="tile" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="tw" width="24" height="24"/><path class="tb" d="M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z"/></svg>
+      Eduardo Jesus Dal Pizzol
+    </a>
+    <nav class="site-nav" aria-label="Seções do início">
+      <ul>
+        <li><a href="../#destaques">Destaques</a></li>
+        <li><a href="../#experiencia">Experiência</a></li>
+        <li><a href="../#competicoes">Competições de IA</a></li>
+        <li><a href="../#pesquisa">Pesquisa e artigos</a></li>
+        <li><a href="../#engenharia">Engenharia de software</a></li>
+        <li><a href="../#programacao">Programação competitiva</a></li>
+        <li><a href="../#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo" class="wrap">
+  <a class="back" href="../"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M13 8H4M7.5 4.5 4 8l3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Voltar ao início</a>
+
+  <div class="detail-head">
+    <div>
+      <h1>IBM Z Datathon 2026: CivicWater Sentinel</h1>
+      <p class="lede">Detecção de vazamentos em redes de água: a cada 5 minutos, compara a pressão medida com a prevista e aponta região, sensores e trecho suspeito, com trilha de auditoria. <span class="tag">Rede simulada</span></p>
+    </div>
+    <dl class="entry-meta">
+      <div><dt>Data</dt><dd>Out/2026</dd></div>
+      <div><dt>Papel</dt><dd>Dados e frontend</dd></div>
+      <div><dt>Time</dt><dd>6 pessoas (CodigoMaster)</dd></div>
+      <div><dt>Plataforma</dt><dd>IBM LinuxONE (s390x)</dd></div>
+    </dl>
+  </div>
+
+  <div class="detail-body">
+  <section class="detail-block spec-wrap" aria-label="Números e condições">
+    <h2 class="spec-title"><svg class="tile" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="tw" width="24" height="24"/><path class="tb" d="M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z"/></svg> Números e condições</h2>
+    <table class="spec" role="table">
+      <colgroup><col class="c-param"><col class="c-val"><col></colgroup>
+      <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Parâmetro</th><th scope="col" role="columnheader">Valor</th><th scope="col" role="columnheader">Condição</th></tr></thead>
+      <tbody role="rowgroup">
+        <tr role="row"><th scope="row" role="rowheader">Vazamentos abruptos detectados</th><td class="val" role="cell">6 de 6</td><td class="cond" role="cell">resultado do time, na calibração de desenvolvimento com dados de 2018</td></tr>
+        <tr role="row"><th scope="row" role="rowheader">Tempo mediano de detecção</th><td class="val" role="cell">4,4 h</td><td class="cond" role="cell">mesma calibração de desenvolvimento (2018)</td></tr>
+        <tr role="row"><th scope="row" role="rowheader">Falsos alarmes</th><td class="val" role="cell">1 por semana</td><td class="cond" role="cell">mesma calibração de desenvolvimento (2018)</td></tr>
+        <tr role="row"><th scope="row" role="rowheader">Vazão no replay</th><td class="val" role="cell">425 janelas/s</td><td class="cond" role="cell">resultado do time, replay de 2019, com 0 erros</td></tr>
+        <tr role="row"><th scope="row" role="rowheader">Sensores de pressão</th><td class="val" role="cell">33</td><td class="cond" role="cell">benchmark BattLeDIM, rede simulada L-Town, 9.504 leituras por dia</td></tr>
+        <tr role="row"><th scope="row" role="rowheader">Vazamentos rotulados mascarados no treino</th><td class="val" role="cell">14</td><td class="cond" role="cell">vazamentos de 2018, excluídos do treino do previsor XGBoost</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="detail-block" aria-label="O que fiz">
+    <h2 class="spec-title"><svg class="tile" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect class="tw" width="24" height="24"/><path class="tb" d="M12 12V0A12 12 0 0 0 0 12ZM12 0H24V12ZM0 12V24H12ZM24 24H12A12 12 0 0 1 24 12Z"/></svg> O que fiz</h2>
+    <ul class="bullets">
+      <li>Modelei o problema e escolhi o benchmark BattLeDIM (rede simulada L-Town, 33 sensores de pressão, 9.504 leituras por dia).</li>
+      <li>Construí a extração e a preparação dos dados, e as máscaras dos 14 vazamentos rotulados de 2018, que excluem esses períodos do treino do previsor XGBoost para ele aprender só o comportamento normal.</li>
+      <li>Desenvolvi o frontend do dashboard público e o túnel SSH até a API na VM LinuxONE.</li>
+      <li>Resultado do time: 425 janelas/s no replay de 2019, com 0 erros, e 6 de 6 vazamentos abruptos detectados (mediana de 4,4 h, 1 falso alarme por semana) na calibração de desenvolvimento com dados de 2018.</li>
+    </ul>
+    <div class="block-foot">
+    <ul class="stack" aria-label="Stack"><li class="stack-label">Stack</li><li>Python</li><li>XGBoost</li><li>IBM LinuxONE</li><li>SSH</li><li>Streamlit</li></ul>
+    <ul class="links"><li><a href="https://civicwater-sentinel-dashboard.onrender.com">Dashboard público</a></li><li><a href="https://github.com/pedruck/Team-CodigoMaster_IBM-Z-Datathon-2026---Civic-Water-Sentinal">Repositório no GitHub</a></li></ul>
+    <p class="note">Rede simulada, nada validado em uma rede real.</p>
+    </div>
+  </section>
+  </div>
+
+  <a class="back" href="../"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M13 8H4M7.5 4.5 4 8l3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Voltar ao início</a>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>© 2026 Eduardo Jesus Dal Pizzol</p>
+    <p><a href="../curriculo.pdf">Currículo (PDF)</a></p>
+  </div>
+</footer>
+</body>
+</html>
