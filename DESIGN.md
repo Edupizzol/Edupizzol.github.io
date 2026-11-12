@@ -232,7 +232,6 @@ The core component: three columns, Parâmetro (40%) · Valor (22%) · Condição
 - Rows separated by 1px hairlines, 0.75rem vertical padding, no outer border, no zebra.
 - Value cell in the Value style (accent, tabular, width 90%); condition cell small ink-2. The caveat lives in the condition cell, never dropped.
 - Collapses to stacked rows under 640px (see Layout).
-- Live variant: the Codeforces reading fills value and condition from the public API with "lido agora ... às HH:MM"; on failure the table stays hidden and only the profile link shows.
 
 ### Section Head
 Tile (14px) plus uppercase condensed Section heading in a row, under a 3px ink rule, 0.875rem above the text.
