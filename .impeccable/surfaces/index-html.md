@@ -19,6 +19,6 @@ STORY: Visitor reads the name and title, sees the Destaques table with value + c
 
 FIRST VIEWPORT: Top strip: azulejo mark + "Eduardo Jesus Dal Pizzol" left, section index right (collapses). Below: document title block — name at display scale (clamp ~3–4.5rem), title line, hero paragraph (max 60ch), then action row: Currículo (PDF) as the solid blue primary, GitHub, LinkedIn, E-mail, Codeforces as text links. Right column on desktop / below on mobile: the Destaques datasheet table (Parâmetro · Valor · Condição), 4 rows, values in tabular blue.
 
-FORM: Datasheet (Impeccable's pick, position 1 of my ordered list; assigned candidate was Brasília azulejo panel, kept only as the small tile module per the owner). seed:71a2eac7e1da08d2. Signature interaction: the Codeforces row is a live measurement — value read from the public API with "lido agora, HH:MM" as its condition; on failure the row shows only the profile link. Motion: none beyond color/underline transitions; reduced-motion honored.
+FORM: Datasheet (Impeccable's pick, position 1 of my ordered list; assigned candidate was Brasília azulejo panel, kept only as the small tile module per the owner). seed:71a2eac7e1da08d2. No live Codeforces reading: the rating table was removed (owner's decision, nov/2026); only the profile link stays. Motion: none beyond color/underline transitions; reduced-motion honored.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance

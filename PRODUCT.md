@@ -26,7 +26,7 @@ Builds AI systems end to end and states their limits: every result carries its c
 
 - Portuguese only (pt-BR).
 - index.html with short cards + one detail page per main project in projetos/ (mcti, pmi-krilltech, civicwater-sentinel, artigos).
-- Codeforces rating fetched client-side from the public API; on failure, show only the profile link.
+- Codeforces appears only as a profile link; the rating is not shown (owner's decision, nov/2026).
 - Content is fixed by the owner: no invented metrics, results, technologies or dates; caveats must stay.
 - MCTI work is internal: no screenshots, company names, CPFs or values beyond the approved text. Code is not public.
 - Links still pending as placeholders are omitted until the owner supplies them.

@@ -1,38 +1,40 @@
-// Rating do Codeforces lido ao vivo da API pública.
-// Sem resposta válida em poucos segundos, a página mantém só o link do perfil.
+// Marca no índice do cabeçalho a seção que está sendo lida.
 (function () {
-  var box = document.getElementById("cf-reading");
-  if (!box || !window.fetch) return;
+  var links = document.querySelectorAll('.site-nav a[href^="#"]');
+  if (!links.length) return;
 
-  var HANDLE = "EduPizzol";
-  var TIMEOUT_MS = 4000;
-  var url = "https://codeforces.com/api/user.info?handles=" + HANDLE;
+  var items = [];
+  for (var i = 0; i < links.length; i++) {
+    var alvo = document.getElementById(links[i].getAttribute("href").slice(1));
+    if (alvo) items.push({ link: links[i], alvo: alvo });
+  }
+  if (!items.length) return;
 
-  var controller = "AbortController" in window ? new AbortController() : null;
-  var timer = setTimeout(function () {
-    if (controller) controller.abort();
-  }, TIMEOUT_MS);
+  var atual = null;
+  var pendente = false;
 
-  fetch(url, controller ? { signal: controller.signal } : {})
-    .then(function (res) {
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      return res.json();
-    })
-    .then(function (data) {
-      clearTimeout(timer);
-      var user = data && data.status === "OK" && data.result && data.result[0];
-      if (!user || typeof user.rating !== "number" || typeof user.maxRating !== "number") return;
+  function marcar() {
+    pendente = false;
+    var linha = window.innerHeight * 0.3;
+    var achado = null;
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].alvo.getBoundingClientRect().top <= linha) achado = items[i];
+    }
+    var doc = document.documentElement;
+    if (window.innerHeight + window.scrollY >= doc.scrollHeight - 2) achado = items[items.length - 1];
+    if (achado === atual) return;
+    if (atual) atual.link.removeAttribute("aria-current");
+    if (achado) achado.link.setAttribute("aria-current", "true");
+    atual = achado;
+  }
 
-      var hora = new Date().toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
-      var when = box.querySelectorAll("[data-cf=when]");
+  function agendar() {
+    if (pendente) return;
+    pendente = true;
+    window.requestAnimationFrame(marcar);
+  }
 
-      box.querySelector("[data-cf=rating]").textContent = user.rating;
-      box.querySelector("[data-cf=max]").textContent = user.maxRating;
-      when[0].textContent = "lido agora da API pública do Codeforces, às " + hora;
-      when[1].textContent = "mesma leitura";
-      box.hidden = false;
-    })
-    .catch(function () {
-      clearTimeout(timer);
-    });
+  window.addEventListener("scroll", agendar, { passive: true });
+  window.addEventListener("resize", agendar);
+  marcar();
 })();
